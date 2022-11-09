@@ -1,5 +1,5 @@
 # Fivem-Proxy Version Française
-## Requis:
+## Prérequis:
 Vps ou Vm
 
 Linux Ubuntu ou Debian
