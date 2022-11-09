@@ -2,7 +2,7 @@
 
 ## Readme english version
 
-You will need a vm or vps ubuntu or debian
+You will need a vm or vps ubuntu/debian
 
 Here is a link to the English documentation
 
@@ -12,6 +12,6 @@ https://github.com/starxtrem/Fivem-Proxy/blob/main/READMEENGLISH.md
 
 Voici le lien de la documentation française
 
-Tu auras besoin d'un vm ou d'un vps ubuntu ou debian
+Tu auras besoin d'une vm ou d'un vps ubuntu/debian
 
 https://github.com/starxtrem/Fivem-Proxy/blob/main/READMEFRENCH.md
