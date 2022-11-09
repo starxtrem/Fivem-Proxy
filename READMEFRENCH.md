@@ -4,4 +4,4 @@ Vps ou Vm autre que ton serveur fivem si non aucun intérêts (mais sa fonctionn
 
 Linux Ubuntu ou Debian
 
-Instal [Nginx](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#installing-prebuilt-debian-packages) !
+Installez [Nginx](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#installing-prebuilt-debian-packages) !
