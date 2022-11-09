@@ -1,6 +1,9 @@
 # Fivem-Proxy
 
-Readme english version
+## Readme english version
 
+Here is a link to the English documentation
 
-Readme version francaise
+## Readme version française
+
+Voici le lien de la documentation française
