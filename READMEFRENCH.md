@@ -6,7 +6,37 @@ Linux Ubuntu ou Debian
 
 Installez [Nginx](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#installing-prebuilt-debian-packages) !
 
-Une fois la chose fait vous allew devoir effectuer quelle-que configuration
+Une fois la chose est faite vous aller devoir effectuer quelque configuration
+
+##### Remplacer le fichier nginx.conf soit (/etc/nginx/nginx.conf)
+
+    user www-data;
+    
+    worker_processes auto;
+    pid /run/nginx.pid;
+    include /etc/nginx/modules-enabled/*.conf;
+    
+    events {
+        worker_connections 768;
+    }
+    
+    http { 
+        sendfile on;
+        tcp_nopush on;
+        tcp_nodelay on;
+        keepalive_timeout 65;
+        types_hash_max_size 2048;    
+        include /etc/nginx/mime.types;
+        default_type application/octet-stream;    
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
+        ssl_prefer_server_ciphers on;    
+        access_log /var/log/nginx/access.log;
+        error_log /var/log/nginx/error.log;    
+        gzip on;    
+        include /etc/nginx/conf.d/*.conf;
+        include /etc/nginx/sites-enabled/*;
+    }
+    include /etc/nginx/stream-proxy.conf;
 
 ##### Vous devez créé un fichier dans /etc/nginx/ du nom de stream-proxy.conf (/etc/nginx/stream-proxy.conf)
 
@@ -78,3 +108,4 @@ Une fois la chose fait vous allew devoir effectuer quelle-que configuration
     fileserver_add ".*" "https://sous-domain.test.com/files"
     fileserver_list
     
+##### Finisez en relançant le serveur nginx en premier puis le serveur fivem et connectez-vous au nom de domaine configurer
