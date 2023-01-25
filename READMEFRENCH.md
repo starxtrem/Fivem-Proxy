@@ -8,6 +8,22 @@ Installez [Nginx](https://docs.nginx.com/nginx/admin-guide/installing-nginx/inst
 
 Une fois la chose fait vous allew devoir effectuer quelle-que configuration
 
+##### Vous devez créé un fichier dans /etc/nginx/ du nom de stream-proxy.conf (/etc/nginx/stream-proxy.conf)
+
+    stream {
+        upstream backend{
+            server ton.serveur.fivem.ip:30120;
+        }
+        server {
+            listen 30120;
+            proxy_pass backend;
+        }
+        server {
+            listen 30120 udp reuseport;
+            proxy_pass backend;
+        }
+    }
+
 ##### Partie à remplacer dans /etc/nginx/sites-available/default ou en créé un autre selon vos compétences
 
     upstream backend {
