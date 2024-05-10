@@ -7,6 +7,8 @@ Linux Ubuntu or Debian
 
 Instal [Nginx](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#installing-prebuilt-debian-packages) !
 
+And instal "apt -y install libnginx-mod-stream"
+
 Once the thing is done you will have to do some configuration
 
 ##### Replace the file nginx.conf or (/etc/nginx/nginx.conf)
